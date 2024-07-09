@@ -1110,7 +1110,7 @@ class IYUUAutoSeed(_PluginBase):
                 # 调用mteam接口获取下载链接
                 return __get_mteam_enclosure(tid=seed.get("torrent_id"), apikey=site.get("apikey"))
             if __is_monika(site.get('url')):
-                # 返回种子id和站点配置中所Monika的rss链接
+                # 返回种子id和站点配置中Monika的rss链接
                 return __get_monika_torrent(tid=seed.get("torrent_id"), rssurl=site.get("rss"))
             elif __is_special_site(site.get('url')):
                 # 从详情页面获取下载链接
